@@ -1,0 +1,308 @@
+/* 
+Author  : Designed by Bendy SERVILUS
+Date    : 05/06/2024
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color: gainsboro;
+}
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    height: 50px;  
+    background-color: gray;
+}
+
+#header-nav {
+    line-height: 50px;
+    width: 100%;
+}
+
+#header-nav #navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-nav #navbar .logo {
+    margin-left: 15px;
+}
+#header-nav #navbar .logo a{
+    font-family: "Indie Flower", cursive !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+}
+
+#header-nav #navbar .logo i {
+    color: orange;
+    margin-right: 10px;
+}
+
+#header-nav #navbar .logo a {
+    color: #fff;
+}
+
+#header-nav #navbar ul {
+    display: flex;
+}
+
+#header-nav #navbar ul li {
+    list-style: none;
+}
+#header-nav #navbar ul li a{
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+#home-banner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#home-banner .text-banner {
+    display: flex;
+    flex-direction: column;
+    margin: auto 34%;
+}
+
+#home-banner .text-banner h1{
+    font-size: 35px;
+    color: #fff;
+}
+
+#home-banner .text-banner h1 span{
+    color: orange;
+}
+#home-banner .text-banner p{
+    color: #fff;
+    text-align: justify;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* Section Acquisition */
+#acquisition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+    position: relative;
+}
+
+#acquisition-content {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+.acquisition-title {
+    position: absolute;
+    top: -30px;
+    left: 220px;
+}
+.acquisition-title h4{
+    font-weight: initial;
+    font-size: 22px;
+}
+
+.acquisition-item {
+    flex: 1 1 calc(33% - 40px);
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+.acquisition-item:hover {
+    background-color: #333;
+}
+
+.acquisition-image {
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.separateur {
+    height: 1.5px;
+    width: 30px;
+    margin-right: auto;
+    background-color: gray;
+    display: inline-block;
+}
+.acquisition-para {
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    font-size: 13px;
+    height: auto;
+}
+
+/* Section Our Team */
+.our-team {
+    height: 350px;
+    margin-top: 30px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.image-team {
+    width: 100%;
+    background-size: cover;
+}
+
+.text-team {
+    margin: auto 20px;
+    text-align: justify;
+    width: 100%;
+}
+
+.text-team h2{
+    font-size: 1.7em;
+    margin-bottom: 10px;
+}
+
+.text-team h2,
+.text-team p {
+    color: #fff;
+}
+
+.text-team p{
+    font-size: 12px;
+}
+
+.text-team h2 span {
+    color: orange;
+}
+
+/* White separator */
+.white-separator{
+    height: 20px;
+    background-color: #fff;
+    width: 100%;
+}
+/* Section Testimonies */
+.testimonies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 0;
+}
+
+.testimonies-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    position: relative;
+}
+
+.testimonies-content h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+.testimony-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+.testimony-item:last-child {
+    margin-bottom: 0;
+}
+
+.testimonial-text {
+    flex: 1;
+    position: relative;
+    padding: 0 20px;
+}
+
+.testimonial-text i {
+    font-size: 24px;
+    color: black;
+    position: absolute;
+}
+
+.testimonial-text i.fa-quote-left {
+    top: 0;
+    left: 0px;
+}
+
+.testimonial-text i.fa-quote-right {
+    bottom: 0;
+    right: 20px;
+}
+
+.testimonial-text p {
+    margin: auto 0 0 10px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    flex-direction: column;
+}
+
+.testimonial-author img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover; /* Assure que l'image couvre entièrement le conteneur sans déformation */
+    margin-right: 10px;
+}
+
+.testimonial-author h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.testimonial-author span {
+    font-size: 14px;
+    color: #777;
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+    margin: auto;
+}
