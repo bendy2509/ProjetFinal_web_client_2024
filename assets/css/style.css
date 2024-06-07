@@ -1,308 +1,500 @@
 /* 
 Author  : Designed by Bendy SERVILUS
-Date    : 05/06/2024
+Date    : june, 2024
 */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Nanum Myeongjo", serif;
-    font-weight: 400;
-    font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-body{
-    background-color: gainsboro;
+body {
+  background-color: gainsboro;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 header {
-    display: flex;
-    height: 50px;  
-    background-color: gray;
+  display: flex;
+  height: 50px;
+  background-color: gray;
 }
 
 #header-nav {
-    line-height: 50px;
-    width: 100%;
+  line-height: 50px;
+  width: 100%;
 }
 
 #header-nav #navbar {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 #header-nav #navbar .logo {
-    margin-left: 15px;
+  margin-left: 15px;
 }
-#header-nav #navbar .logo a{
-    font-family: "Indie Flower", cursive !important;
-    font-weight: 400 !important;
-    font-style: normal !important;
+#header-nav #navbar .logo a {
+  font-family: "Indie Flower", cursive !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
 }
 
 #header-nav #navbar .logo i {
-    color: orange;
-    margin-right: 10px;
+  color: orange;
+  margin-right: 10px;
 }
 
 #header-nav #navbar .logo a {
-    color: #fff;
+  color: #fff;
 }
 
 #header-nav #navbar ul {
-    display: flex;
+  display: flex;
 }
 
 #header-nav #navbar ul li {
-    list-style: none;
+  list-style: none;
 }
-#header-nav #navbar ul li a{
-    margin-right: 10px;
-    font-size: 16px;
-    font-weight: 500;
-    color: #fff;
+#header-nav #navbar ul li a {
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
 }
 
 #home-banner {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: calc(100vh - 50px);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 50px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 #home-banner .text-banner {
-    display: flex;
-    flex-direction: column;
-    margin: auto 34%;
+  display: flex;
+  flex-direction: column;
+  margin: auto 34%;
 }
 
-#home-banner .text-banner h1{
-    font-size: 35px;
-    color: #fff;
+#home-banner .text-banner h1 {
+  font-size: 35px;
+  color: #fff;
 }
 
-#home-banner .text-banner h1 span{
-    color: orange;
+#home-banner .text-banner h1 span {
+  color: orange;
 }
-#home-banner .text-banner p{
-    color: #fff;
-    text-align: justify;
-    font-size: 13px;
-    margin-top: 5px;
+#home-banner .text-banner p {
+  color: #fff;
+  text-align: justify;
+  font-size: 13px;
+  margin-top: 5px;
 }
 
 /* Section Acquisition */
 #acquisition {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 5rem;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 5rem;
+  position: relative;
 }
 
 #acquisition-content {
-    display: flex;
-    justify-content: space-around;
-    width: 70%;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  flex-wrap: wrap;
 }
 
 .acquisition-title {
-    position: absolute;
-    top: -30px;
-    left: 220px;
+  position: absolute;
+  top: -30px;
+  left: 220px;
 }
-.acquisition-title h4{
-    font-weight: initial;
-    font-size: 22px;
+.acquisition-title h4 {
+  font-weight: initial;
+  font-size: 22px;
 }
 
 .acquisition-item {
-    flex: 1 1 calc(33% - 40px);
-    margin: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: 0.2s;
+  flex: 1 1 calc(33% - 40px);
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
 }
 .acquisition-item:hover {
-    background-color: #333;
+  background-color: #333;
 }
 
 .acquisition-image {
-    width: 100%;
-    height: 120px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .separateur {
-    height: 1.5px;
-    width: 30px;
-    margin-right: auto;
-    background-color: gray;
-    display: inline-block;
+  height: 1.5px;
+  width: 30px;
+  margin-right: auto;
+  background-color: gray;
+  display: inline-block;
 }
 .acquisition-para {
-    text-align: center;
-    background-color: #fff;
-    padding: 10px;
-    font-size: 13px;
-    height: auto;
+  text-align: center;
+  background-color: #fff;
+  padding: 10px;
+  font-size: 13px;
+  height: auto;
 }
 
 /* Section Our Team */
 .our-team {
-    height: 350px;
-    margin-top: 30px;
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.8);
+  height: 350px;
+  margin-top: 30px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .image-team {
-    width: 100%;
-    background-size: cover;
+  width: 100%;
+  background-size: cover;
 }
 
 .text-team {
-    margin: auto 20px;
-    text-align: justify;
-    width: 100%;
+  margin: auto 20px;
+  text-align: justify;
+  width: 100%;
 }
 
-.text-team h2{
-    font-size: 1.7em;
-    margin-bottom: 10px;
+.text-team h2 {
+  font-size: 1.7em;
+  margin-bottom: 10px;
 }
 
 .text-team h2,
 .text-team p {
-    color: #fff;
+  color: #fff;
 }
 
-.text-team p{
-    font-size: 12px;
+.text-team p {
+  font-size: 12px;
 }
 
 .text-team h2 span {
-    color: orange;
+  color: orange;
 }
 
 /* White separator */
-.white-separator{
-    height: 20px;
-    background-color: #fff;
-    width: 100%;
+.white-separator {
+  height: 20px;
+  background-color: #fff;
+  width: 100%;
 }
 /* Section Testimonies */
 .testimonies {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 0;
 }
 
 .testimonies-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 70%;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  position: relative;
 }
 
 .testimonies-content h3 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    position: absolute;
-    top: -20px;
-    left: 0;
+  font-size: 20px;
+  margin-bottom: 20px;
+  position: absolute;
+  top: -20px;
+  left: 0;
 }
 .testimony-item {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 20px;
-    background-color: #fff;
-    margin: 20px 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px 0;
 }
 .testimony-item:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .testimonial-text {
-    flex: 1;
-    position: relative;
-    padding: 0 20px;
+  flex: 1;
+  position: relative;
+  padding: 0 20px;
 }
 
 .testimonial-text i {
-    font-size: 24px;
-    color: black;
-    position: absolute;
+  font-size: 24px;
+  color: black;
+  position: absolute;
 }
 
 .testimonial-text i.fa-quote-left {
-    top: 0;
-    left: 0px;
+  top: 0;
+  left: 0px;
 }
 
 .testimonial-text i.fa-quote-right {
-    bottom: 0;
-    right: 20px;
+  bottom: 0;
+  right: 20px;
 }
 
 .testimonial-text p {
-    margin: auto 0 0 10px;
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-    text-align: justify;
+  margin: auto 0 0 10px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
 }
 
 .testimonial-author {
-    display: flex;
-    align-items: center;
-    margin: 20px;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  flex-direction: column;
 }
 
 .testimonial-author img {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    object-fit: cover; /* Assure que l'image couvre entièrement le conteneur sans déformation */
-    margin-right: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover; /* Assure que l'image couvre entièrement le conteneur sans déformation */
+  margin-right: 10px;
 }
 
 .testimonial-author h4 {
-    margin: 0;
-    font-size: 16px;
-    color: #333;
+  margin: 0;
+  font-size: 16px;
+  color: #333;
 }
 
 .testimonial-author span {
-    font-size: 14px;
-    color: #777;
+  font-size: 14px;
+  color: #777;
 }
-
 
 /* Footer */
 footer {
-    display: flex;
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 footer p {
-    margin: auto;
+  margin: auto;
+}
+
+/* Nos offres pages */
+.banner-services {
+  display: flex;
+  height: calc(30vh - 50px);
+  width: 100%;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: rgba(43, 43, 43, 0.5);
+}
+
+.banner-services-text {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.banner-services-text h1 {
+  margin: auto;
+  color: #fff;
+  font-weight: 600;
+  font-size: 2em;
+}
+.banner-services-text p {
+  color: #fff;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.service-item {
+  flex: 1 1 calc(33% - 40px);
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.service-item h3 {
+  margin-top: 15px;
+  font-size: 24px;
+}
+
+.service-item p {
+  color: #666;
+}
+
+/* Our team page */
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.team-member {
+  flex: 1 1 calc(33% - 40px);
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px 8px 0 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member h3 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.team-member p {
+  color: #666;
+  margin: 10px 0;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #333;
+  font-size: 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: orange;
+}
+
+.contact {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+  text-align: center;
+  font-family: "Nanum Myeongjo", serif;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-family: "Nanum Myeongjo", serif;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.form-group button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+  background-color: #0056b3;
 }
