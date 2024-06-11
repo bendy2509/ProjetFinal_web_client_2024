@@ -57,7 +57,7 @@ header {
   color: #fff;
 }
 
-#header-nav #navbar ul {
+#nav-links {
   display: flex;
   justify-content: center;
 }
@@ -80,6 +80,16 @@ header {
   background-color: teal;
   font-weight: 600;
   color: #fff;
+}
+
+.menu-button{
+  color: #fff;
+  position: absolute;
+  right: 0;
+  margin-right: 25px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
 }
 
 #home-banner {
@@ -418,6 +428,7 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 400px);
+  gap: 2px;
 }
 
 .service-box{
@@ -478,6 +489,7 @@ header {
   justify-content: space-between;
   padding: 15px 20px;
   color: #fff;
+  background-color: teal;
 }
 .service-name{
   font-weight: 500;
@@ -499,7 +511,7 @@ header {
 }
 
 .team-member {
-  flex: 1 1 calc(33% - 40px);
+  flex: 1 1 calc(33% - 40px); /* Trois colonnes pour grands écrans */
   padding: 20px;
   margin: 20px;
   text-align: center;
@@ -607,7 +619,6 @@ header {
 .form-group button:hover {
   background-color: #0056b3;
 }
-
 
 /* Footer */
 footer {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nanum+Myeongjo&display=swap"
         rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
     <!-- Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <title>Lendor | Projet Final</title>
 </head>
 
@@ -20,21 +24,24 @@
         <div id="header-nav">
             <nav id="navbar">
                 <div class="logo"><a href="./index.html"><i class='fas fa-crown'></i>Lendor</a></div>
-                <ul>
+                <ul id="nav-links">
                     <li><a href="./index.html">Accueil</a></li>
                     <li><a href="./services.html">Nos offres</a></li>
                     <li><a href="./team.html">Notre équipe</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
+                <div class="menu-button" onclick="toggleMenu();"><i class="fas fa-bars"></i></div>
             </nav>
         </div>
     </header>
 
     <!-- Banner -->
-    <section id="home-banner" style="background-image: url(./assets/images/banner0.jpeg);" aria-label="Banner d'un immobilier d'exception">
+    <section id="home-banner" style="background-image: url(./assets/images/banner0.jpeg);"
+        aria-label="Banner d'un immobilier d'exception">
         <div class="text-banner">
             <h1>Un <span>immobilier</span> d'exception pour les clients d'exception</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit amet consectetur adipisicing elit amet consectetur adipisicing elit. Accusamus est natu ipsum.!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit amet consectetur adipisicing elit amet
+                consectetur adipisicing elit. Accusamus est natu ipsum.!</p>
         </div>
     </section>
 
@@ -45,7 +52,8 @@
         </div>
         <div id="acquisition-content">
             <div class="acquisition-item">
-                <div class="acquisition-image" style="background-image: url('./assets/images/banner.jpeg');" aria-label="Image d'un appartement à Paris 75007"></div>
+                <div class="acquisition-image" style="background-image: url('./assets/images/banner.jpeg');"
+                    aria-label="Image d'un appartement à Paris 75007"></div>
                 <p class="acquisition-para">
                     Appartement Paris 75007 <br>
                     11 chambres 450 m² <br>
@@ -54,7 +62,8 @@
                 </p>
             </div>
             <div class="acquisition-item">
-                <div class="acquisition-image" style="background-image: url('./assets/images/banner.jpeg');" aria-label="Image d'un appartement à Paris 75007"></div>
+                <div class="acquisition-image" style="background-image: url('./assets/images/banner.jpeg');"
+                    aria-label="Image d'un appartement à Paris 75007"></div>
                 <p class="acquisition-para">
                     Appartement Paris 75007 <br>
                     11 chambres 450 m² <br>
@@ -63,7 +72,8 @@
                 </p>
             </div>
             <div class="acquisition-item">
-                <div class="acquisition-image" style="background-image: url('./assets/images/banner.jpeg');" aria-label="Image d'un appartement à Paris 75007"></div>
+                <div class="acquisition-image" style="background-image: url('./assets/images/banner.jpeg');"
+                    aria-label="Image d'un appartement à Paris 75007"></div>
                 <p class="acquisition-para">
                     Appartement Paris 75007 <br>
                     11 chambres 450 m² <br>
@@ -76,7 +86,8 @@
 
     <!-- Team part -->
     <section class="our-team">
-        <div class="image-team" style="background-image: url(./assets/images/team-image.jpeg);" aria-label="Photo de l'équipe">
+        <div class="image-team" style="background-image: url(./assets/images/team-image.jpeg);"
+            aria-label="Photo de l'équipe">
         </div>
         <div class="text-team">
             <h2>Une équipe de <span>professionnels</span> avec plus de 10 ans d'expérience</h2>
@@ -87,7 +98,7 @@
         </div>
     </section>
 
-    <section class="white-separator"></section>
+    <div class="white-separator"></div>
     <!-- Testimonies part -->
     <section class="testimonies">
         <div class="testimonies-content">
@@ -95,9 +106,11 @@
             <span class="black-line"></span>
             <div class="testimony-item">
                 <div class="testimonial-text">
-                    
-                    <p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem natus animi nihil explicabo magnam quae tenetur sequi architecto? Voluptatem natus animi nihil explicabo magnam quae!
-                    <i class="fas fa-quote-right"></i>
+
+                    <p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatem natus animi nihil explicabo magnam quae tenetur sequi architecto? Voluptatem natus
+                        animi nihil explicabo magnam quae!
+                        <i class="fas fa-quote-right"></i>
                     </p>
                 </div>
                 <div class="testimonial-author">
@@ -117,17 +130,21 @@
                     </div>
                 </div>
                 <div class="testimonial-text">
-                    
-                    <p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem natus animi nihil explicabo magnam quae tenetur sequi architecto? Voluptatem natus animi nihil explicabo magnam quae!
-                    <i class="fas fa-quote-right"></i>
+
+                    <p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatem natus animi nihil explicabo magnam quae tenetur sequi architecto? Voluptatem natus
+                        animi nihil explicabo magnam quae!
+                        <i class="fas fa-quote-right"></i>
                     </p>
                 </div>
             </div>
             <div class="testimony-item">
                 <div class="testimonial-text">
-                    
-                    <p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem natus animi nihil explicabo magnam quae tenetur sequi architecto? Voluptatem natus animi nihil explicabo magnam quae!
-                    <i class="fas fa-quote-right"></i>
+
+                    <p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatem natus animi nihil explicabo magnam quae tenetur sequi architecto? Voluptatem natus
+                        animi nihil explicabo magnam quae!
+                        <i class="fas fa-quote-right"></i>
                     </p>
                 </div>
                 <div class="testimonial-author">
@@ -147,6 +164,7 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/0d50c077cd.js" crossorigin="anonymous"></script>
+    <script src="./assets/JS/script.js"></script>
 </body>
 
 </html>

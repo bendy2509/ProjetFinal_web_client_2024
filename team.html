@@ -12,9 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nanum+Myeongjo&display=swap"
         rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
     <!-- Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <title>Notre équipe</title>
 </head>
 <body>
@@ -22,12 +25,13 @@
         <div id="header-nav">
             <nav id="navbar">
                 <div class="logo"><a href="./index.html"><i class='fas fa-crown'></i>Lendor</a></div>
-                <ul>
+                <ul id="nav-links">
                     <li><a href="./index.html">Accueil</a></li>
                     <li><a href="./services.html">Nos offres</a></li>
                     <li><a href="./team.html">Notre équipe</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
+                <div class="menu-button" onclick="toggleMenu();"><i class="fas fa-bars"></i></div>
             </nav>
         </div>
     </header>
@@ -77,5 +81,6 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/0d50c077cd.js" crossorigin="anonymous"></script>
+    <script src="./assets/JS/script.js"></script>
 </body>
 </html>
