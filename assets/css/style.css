@@ -107,7 +107,7 @@ header {
 #home-banner .text-banner {
   display: flex;
   flex-direction: column;
-  margin: auto 34%;
+  margin: auto 25%;
 }
 
 #home-banner .text-banner h1 {
@@ -147,7 +147,7 @@ header {
 .acquisition-title {
   position: absolute;
   top: -30px;
-  left: 209px;
+  left: 17%;
 }
 .acquisition-title h4 {
   font-weight: initial;
@@ -361,7 +361,7 @@ header {
   margin: 40px auto;
 }
 
-/* Nos offres part */
+
 .services-container {
   display: flex;
   justify-content: space-around;
@@ -420,7 +420,7 @@ header {
 }
 
 .all-service-container{
-  padding: 0 100px;
+  padding: 0 70px;
   min-height: 150vh;
   margin-top: 50px;
 }
@@ -500,6 +500,12 @@ header {
 .service-price{
   font-size: 20px;
   margin: auto 0;
+}
+.note-service6 .service-bio,
+.note-service4 .service-bio{
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 /* End grid pard */
 
