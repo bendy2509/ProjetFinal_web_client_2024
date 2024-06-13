@@ -220,10 +220,25 @@
   .team-member {
     flex: 1 1 calc(50% - 40px);
   }
+
+  /* Contact page */
+.contact {
+  max-width: 500px;
+
+}
+
 }
 
 /* Media Query pour les 576px */
 @media (max-width: 576px) {
+  .text-team {
+    margin:auto;
+    text-align: start;
+  }
+  .text-team p,
+  .text-team h2 {
+    padding: 0 10px;
+  }
   .testimonies {
     padding: 20px 20px 0;
   }
@@ -236,6 +251,7 @@
   .testimonies-content h3 {
     position: initial;
     text-align: center;
+    font-size: 1.5em;
   }
   .testimonies-content span {
     margin: 0;
@@ -312,5 +328,25 @@
   }
   .service-price{
     font-size: 15px;
+  }
+
+  .team-container {
+    flex-direction: column;
+  }
+  
+  .team-member:hover {
+    transform: scale(1.02);
+    
+  }
+  
+  .social-icons {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .contact {
+    max-width: 400px;
   }
 }
