@@ -50,11 +50,12 @@
     width: 250px;
     height: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: rgba(51, 51, 51, 0.9);
+    background-color: var(--color2);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 0 0 0 10px;
+    z-index: 50;
   }
   #header-nav #navbar ul li a {
     font-size: 1.5em;
@@ -131,6 +132,22 @@
   .text-team p {
     font-size: 14px;
   }
+  #team-banner {
+    height: 40vh; /* Ajustez la hauteur pour les écrans plus petits */
+    padding: 10px;
+}
+
+#team-banner .text-banner {
+    padding: 15px;
+}
+
+#team-banner .text-banner h1 {
+    font-size: 2em;
+}
+
+#team-banner .text-banner p {
+    font-size: 1em;
+}
   .testimonies {
     padding: 20px 20px 0;
   }
@@ -265,6 +282,22 @@
 
 /* Media Query pour les 576px */
 @media (max-width: 576px) {
+  #team-banner {
+    height: 35vh; /* Ajustez la hauteur pour les écrans encore plus petits */
+    padding: 5px;
+}
+
+#team-banner .text-banner {
+    padding: 10px;
+}
+
+#team-banner .text-banner h1 {
+    font-size: 1.5em;
+}
+
+#team-banner .text-banner p {
+    font-size: 0.9em;
+}
   .text-team {
     margin: auto;
     text-align: start;
